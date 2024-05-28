@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "mobile",
+      "product_cat": 100
+    },
+    {
+      "id": 2,
+      "name": "Nokia",
+      "product_cat": 100
+    },
+    {
+      "id": 5,
+      "name": "xiomi",
+      "product_cat": 100
+    },
+    {
+      "id": 6,
+      "name": "Vivo",
+      "product_cat": 100
+    },
+    {
+      "id": 8,
+      "name": "Vivo",
+      "product_cat": 100
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Dealer List</h1>
+    <button (click)="openDealerModal(dealers)" class="add-btn">Add Dealer</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Email</th>
+                <th>Mobile No</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dealer of dealers">
+                <td>{{ dealer.name }}</td>
+                <td>{{ dealer.company_name }}</td>
+                <td>{{ dealer.email }}</td>
+                <td>{{ dealer.mobile_no }}</td>
+                <td>
+                    <button (click)="openDealerModal(dealer)" class="edit-btn">Edit</button>
+                    <button (click)="deleteDealer(dealer.id)" class="delete-btn">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <app-dealer-form [dealer]="selectedDealer" (close)="closeDealerModal($event)"></app-dealer-form>
+</div>
